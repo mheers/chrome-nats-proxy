@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chrome-NATS-Proxy</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="app">
+      <h2>MQ Server Manager</h2>
+      <label for="localUrl">Local MQ URL:</label>
+      <input
+        type="text"
+        id="localUrl"
+        placeholder="e.g., ws://localhost:4222"
+      />
+
+      <label for="localCredentials">Local Credentials:</label>
+      <textarea id="localCredentials"></textarea>
+
+      <hr class="divider" />
+
+      <label for="remoteUrl">Remote MQ URL:</label>
+      <input
+        type="text"
+        id="remoteUrl"
+        placeholder="e.g., ws://remote-mq:4222"
+      />
+
+      <label for="remoteCredentials">Remote Credentials:</label>
+      <textarea id="remoteCredentials"></textarea>
+
+      <button id="saveBtn">Save</button>
+
+      <br />
+      <button id="exportBtn">Export</button>
+      <button id="importBtn">Import</button>
+      <hr class="divider" />
+      <button id="startBtn">Start Proxy</button>
+      <button id="stopBtn">Stop Proxy</button>
+
+      <div id="status"></div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

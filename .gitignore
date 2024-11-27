@@ -1,0 +1,8 @@
+*.state*
+__debug_bin*
+.env
+cover.out
+.VERSION
+*.creds
+chrome-nats-proxy.bin
+chrome-nats-proxy.exe
